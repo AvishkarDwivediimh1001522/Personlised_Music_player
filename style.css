@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    position: fixed;
+}
+
+.left{
+    width: 25vw;
+    height: 100vh;
+   
+}
+.right{
+    width: 75vw;
+    height: 100vh;
+    position: relative;
+   
+}
+.logo img{
+    width: 90px;
+}
+.home{
+    height: 20vh;
+    margin: 5px;
+    
+}
+
+.home ul li{
+     display: flex;
+     gap: 15px;
+     /* margin-left: 10px; */
+     width: 20px;
+     list-style: none;
+     padding-top:14px;
+     font-size: 17px;
+     font-weight: bold;
+     /* margin:180px; */
+}
+
+.library{
+    height: 56vh;
+
+}
+.heading {
+    display: flex;
+    /* justify-content: space-evenly; */
+    width: 100%;
+    gap: 15px;
+    padding: 23px 14px;
+    font-weight: bold;
+    font-size: 14px;
+    align-items: center;
+}
+.heading img{
+    width: 30px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 3vw 6vw 6vw;
+    grid-template-rows: 1 1 1;
+    font-size: 13px;
+    
+    color:grey;
+    gap:26px;
+    gap:2/3 100px;
+    position: absolute;
+    padding:15px 10px 10px 20px;
+    bottom:0;
+
+}
+.footer a{
+    color: grey;
+    text-decoration: none;
+}
+.nav{
+    /* position: fixed; */
+    height: 10vh;
+    margin-top: 5px;
+    justify-content: space-between;
+    background-color:#191819;
+}
+
+.key_icons_image{
+    margin: 5px;
+    padding: 4px;
+}
+.nav img{
+    height: 6vh;
+}
+.loginbtn{
+    height:7vh;
+    background-color: white;
+    border: 0.5px solid rgba(0, 0, 0, 0.943);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 100px;
+    margin: 10px;
+    padding:10px;
+    width: 8vw;
+}
+.loginbtn:hover{
+    font-weight: bolder;
+    font-size: 18.5px;
+}
+.signupbtn{
+    height: 7vh;
+    background-color:#191819;
+    color:grey;
+    border: 0.5px solid #191819 ;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 100px;
+    margin: 0px;
+    padding:10px;
+    width: 8vw;
+}
+
+.signupbtn:hover{
+    color: white;
+    font-size: 18.5px;
+}
+
+.spotifyPlaylist{   
+   
+   padding:18px;
+}
+.cardContainer{
+    /* margin-left: 2.5vw;
+    margin-right: 2vw; */
+    margin-top: 2vh;
+    display : flex;
+    flex-wrap: wrap;
+    gap :5px;
+    padding-top: 15px;
+    overflow-y:auto;
+    max-height: 65vh;
+    
+
+}
+.card{
+    height:39vh;
+    width: 14vw;
+    /* margin:25px 50px 20px 25px; */
+    background-color: #151514;
+   
+}
+.card:hover{
+    background-color: #252525;
+}
+.card>*{
+    padding-top: 5px;
+}
+
+.card img{
+    width: 85%;
+    object-fit: contain;
+    padding: 15px 0px 8px 15px;
+    border-radius: 12px;
+}
+.card:hover{
+    border-radius: 0px;
+}
+
+
+
+ /* scrollbar desining done by copilot */
+ ::-webkit-scrollbar {
+    width: 10px; /* Width of the entire scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #333; /* Color of the track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #666; /* Color of the scroll thumb */
+    border-radius: 6px; /* Rounded corners of the thumb */
+    border: 3px solid #333; /* Border around the thumb */
+  }
+
+.playbar{
+    position: absolute;
+    /* position: fixed; */
+    bottom: 0;
+    /* background-color:#1f1f1f; */
+    background-color: lightgreen;
+    height: 9vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.playbar img{
+    height: 4.2vh;
+    margin-top: 6px;
+}
+
+ /* left side ke bar me songlist desining */
+
+.songList{
+    padding: 0px 1px 10px 1px;
+    /* border: solid white; */
+    height: 35vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+};
+.songList:hover{
+    background-color: #252525;
+
+}
+.songList ul{
+    gap: 2px;
+}
+
+.songList ul li{
+    display: grid;
+    grid-template-columns: 2vw 5vw 10vw 2vw ;
+    padding: 10px 3px 2px 3px;
+    /* justify-content: space-between; */ 
+    height: 8vh;
+    width: 21vw;
+    margin: 10px;
+    gap:10px 10px;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
+    overflow-y: auto;
+    overflow-x: auto;
+
+    max-height: 8vh;
+    
+    list-style: none; 
+    background-color: #252525;
+    border-radius: 10px;
+    /* border: 2px solid white; */
+}
+.songList ul li:hover{
+    background-color: #302f2f;
+    border:1px solid white
+}

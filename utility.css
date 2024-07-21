@@ -1,0 +1,25 @@
+.flex{
+    display:flex;
+}
+.red-border{
+    border: 2px solid red;
+ }
+
+ .bg-grey{
+    background-color:#121212 ;
+ }
+
+.invert{
+    filter: invert(1);
+}
+
+.rounded{
+    border-radius: 7px;
+}
+.m-1{
+    margin:10px;
+}
+.margin-top{
+    margin-top: 5px;
+    
+}
